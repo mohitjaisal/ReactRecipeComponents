@@ -30,6 +30,8 @@ function App() {
     handleRecipeChange
   }
 
+  
+  
   function handleRecipeSelect(id) {
     setSelectedRecipeId(id)
   }
@@ -46,6 +48,8 @@ function App() {
       ]
     }
 
+    
+    
     setSelectedRecipeId(newRecipe.id)
     setRecipes([...recipes, newRecipe])
   }
@@ -57,6 +61,8 @@ function App() {
     setRecipes(newRecipes)
   }
 
+  
+  
   function handleRecipeDelete(id) {
     if (selectedRecipeId != null && selectedRecipeId === id) {
       setSelectedRecipeId(undefined)
@@ -64,6 +70,8 @@ function App() {
     setRecipes(recipes.filter(recipe => recipe.id !== id))
   }
 
+  
+  
   return (
     <RecipeContext.Provider value={recipeContextValue}>
       <RecipeList recipes={recipes} />
