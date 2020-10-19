@@ -36,6 +36,7 @@ function App() {
     setSelectedRecipeId(id)
   }
 
+ 
   function handleRecipeAdd() {
     const newRecipe = {
       id: uuidv4(),
@@ -54,6 +55,7 @@ function App() {
     setRecipes([...recipes, newRecipe])
   }
 
+  
   function handleRecipeChange(id, recipe) {
     const newRecipes = [...recipes]
     const index = newRecipes.findIndex(r => r.id === id)
@@ -79,6 +81,7 @@ function App() {
     </RecipeContext.Provider>
   )
 }
+
 
 const sampleRecipes = [
   {
@@ -120,5 +123,6 @@ const sampleRecipes = [
     ]
   }
 ]
+
 
 export default App;
