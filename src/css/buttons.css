@@ -19,3 +19,11 @@
   }
   
  
+ .btn--danger {
+    color: white;
+    background-color: hsl(0, 100%, 50%);
+  }
+  
+  .btn--danger:hover {
+    background-color: hsl(0, 100%, 35%);
+  }
