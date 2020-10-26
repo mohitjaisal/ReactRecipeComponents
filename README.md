@@ -1,4 +1,6 @@
-# React Components Live Changes
+# React Recipe Components
+
+### Components Live Changes
 
 ## Available Scripts
 
